@@ -1,0 +1,42 @@
+.page {
+  padding: 0 10;
+}
+
+.form {
+  width: 100%;
+}
+
+.header {
+  color: #000;
+  font-size: 36;
+  margin-top: 80;
+  font-family: "Lato", "Lato-Bold";
+  font-weight: bold;
+}
+
+.sub-header{
+  color: #000;
+  margin-top: 5;
+}
+
+.input-field {
+  margin-top: 100;
+}
+
+.input {
+  font-size: 16;
+  margin-bottom: 20;
+  padding-bottom: 5;
+  placeholder-color: #A8A8A8;
+  border-bottom-width: 1;
+  border-color: #999;
+}
+
+.btn-primary {
+  height: 50;
+  margin: 50 5 0;
+  background-color: #000;
+  border-radius: 8;
+  color: #fff;
+  font-size: 16;
+}

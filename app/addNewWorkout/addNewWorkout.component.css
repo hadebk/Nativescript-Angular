@@ -1,0 +1,63 @@
+DockLayout{
+    height: 40;
+    padding: 15 15 0;
+    z-index: 999;
+    color: #fff;
+}
+
+.cover-img{
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header{
+    font-size: 28;
+    font-weight: bold;
+    margin: 20 20 40;
+    color: #000;
+}
+
+TextField{
+    margin: 0 20 25;
+    font-size: 16;
+    padding-bottom: 7;
+    placeholder-color: #A8A8A8;
+    border-bottom-width: 1;
+    border-color: #999;
+}
+
+.tags-box{
+    margin: 20 20 40
+}
+
+.tags-sub-box StackLayout, .newTag{
+    background-color: #F0F0F2;
+    color: #979696;
+    font-size: 14;
+    border-radius: 5;
+    margin: 5;
+    padding: 8 20;
+}
+
+.break-line{
+    background-color: #999;
+    height: 1;
+    margin-top: 5;
+    margin-bottom: 10;
+}
+
+TextView{
+    border-width: 1;
+    border-color: #fff;
+    margin:0 20 50;
+    font-size: 16;
+    placeholder-color: #A8A8A8;
+}
+
+.fa{
+    font-family: "FontAwesome", "fontawesome-web";
+    color: #979696;
+    font-size: 14;
+    padding: 2 7 0 0;
+}

@@ -1,0 +1,33 @@
+<FlexboxLayout class="page">
+
+  <ScrollView class="form">
+
+    <StackLayout maxHeight="100%">
+
+      <Label class="header" text="Login"></Label>
+      <Label class="sub-header" text="Hi, please log into your account."></Label>
+
+      <StackLayout class="input-field">
+
+        <TextField 
+          required class="input" hint="Email" keyboardType="email"
+          autocorrect="false" autocapitalizationType="none" 
+          [(ngModel)]="user.userName" returnKeyType="next">
+        </TextField>
+
+        <TextField 
+          required #password class="input" 
+          hint="Password" secure="true" 
+          [(ngModel)]="user.password">
+        </TextField>
+
+        <Button text="Login" (tap)="submit()" class="btn btn-primary"></Button>
+
+      </StackLayout>
+  
+    </StackLayout>
+
+  </ScrollView>
+
+</FlexboxLayout>
+

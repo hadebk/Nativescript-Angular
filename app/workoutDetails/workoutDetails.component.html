@@ -1,0 +1,67 @@
+<ScrollView>
+
+    <StackLayout>
+
+        <AbsoluteLayout>
+            
+            <Image class="cover-img" src="~/app/images/cover-2-min.jpg" left="0" top="0">
+            </Image>
+            
+            <DockLayout stretchLastChild="false" left="0" top="0" width="100%">
+
+                <Image dock="right" src="~/app/images/lochen.png" (tap)="delete_workout()"></Image>
+                <Image dock="left" src="~/app/images/arrow.png" (tap)="back()"></Image>
+
+            </DockLayout> 
+
+        </AbsoluteLayout>
+
+    
+        <StackLayout *ngIf="HasData" class="data">
+
+            <Label [text]="this.workout.name" class="name"></Label>
+
+            <StackLayout class="time-box">
+                <GridLayout columns="*,2*" horizontalAlignment="left" verticalAlignment="top">
+                
+                    <Image col="0" src="~/app/images/stopwatch.png" class="icon-time"></Image>
+
+                    <StackLayout col="1">
+                        <Label [text]="convert_time_format(this.workout.durationSeconds)" class="time"></Label>
+                        <Label text="Total Time" class="sub-time"></Label>
+                    </StackLayout>
+
+                </GridLayout>
+            </StackLayout>
+
+            <StackLayout class="distance-box">
+                <GridLayout columns="*,2*" horizontalAlignment="left" verticalAlignment="top">
+                
+                    <Image col="0" src="~/app/images/location.png" class="distance-time"></Image>
+
+                    <StackLayout col="1">
+                        <Label [text]="this.workout.distanceMeters/1000+' km'" class="distance"></Label>
+                        <Label text="Distance" class="sub-distance"></Label>
+                    </StackLayout>
+
+                </GridLayout>
+            </StackLayout>
+    
+            <FlexboxLayout *ngIf="isVisible" flexWrap="wrap" alignItems="flex-start" class="tags-box">
+                <StackLayout *ngFor="let tag of this.workout.tags">
+                    <Label [text]="tag.name" class="tag" ></Label>
+                </StackLayout>
+            </FlexboxLayout >
+
+            <Label class="break-line"></Label>
+
+            <StackLayout class="desc-box">
+                <Label text="Description" class="desc-label"></Label>
+                <Label [text]="this.workout.description" class="desc"></Label>
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+    
+</ScrollView>

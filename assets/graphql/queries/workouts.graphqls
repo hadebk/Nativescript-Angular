@@ -1,0 +1,11 @@
+query workouts {
+    workouts @namedClient(name: "BackendServiceGraphQLClient") {
+        id
+        name
+        description
+        at
+        tags {
+            name
+        }
+    }
+}

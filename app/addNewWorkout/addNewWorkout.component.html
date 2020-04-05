@@ -1,0 +1,73 @@
+<ScrollView>
+
+    <StackLayout>
+
+        <AbsoluteLayout> 
+            
+            <Image class="cover-img" src="~/app/images/cover-2-min.jpg" left="0" top="0">
+            </Image>
+             
+            <DockLayout stretchLastChild="false" left="0" top="0" width="100%">
+
+                <Label dock="right" text="Save" (tap)="save()"></Label>
+                <Label dock="left" text="Cancel" (tap)="cancel()"></Label>
+
+            </DockLayout>
+
+        </AbsoluteLayout>
+
+        <StackLayout class="input-field">
+
+            <Label text="New Workout" class="header"></Label>
+
+            <TextField 
+              required class="input" hint="Name"
+              autocorrect="false" autocapitalizationType="none" 
+              returnKeyType="next" [(ngModel)]="workout.name">
+            </TextField>
+    
+            <TextField 
+              required class="input" 
+              hint="Distance in Meters"
+              returnKeyType="next"
+              keyboardType = "number"
+              [(ngModel)]="workout.distanceMeters">
+            </TextField>
+
+            <TextField 
+              required class="input" 
+              hint="Time in Seconds"
+              returnKeyType="next"
+              returnKeyType = "next" 
+              keyboardType = "number"
+              [(ngModel)]="workout.durationSeconds">
+            </TextField>
+
+            <WrapLayout  orientation="horizontal" class="tags-box">
+                <WrapLayout  orientation="horizontal" class="tags-sub-box">
+                    <StackLayout *ngFor="let tag of workout.tags" orientation="horizontal">
+                        <Label class="fa" text="&#xf00d;" paddingRight="10" (tap)="tag_delete(tag)"></Label>
+                        <Label [text]="tag.name"></Label>
+                    </StackLayout>
+                </WrapLayout>
+             
+                <StackLayout orientation="horizontal" class="newTag" (tap)="addTagName()">
+                    <Label class="fa" text="&#xf067;"></Label>
+                    <Label text="New Tag"></Label>
+                </StackLayout>
+            </WrapLayout >
+
+            <Label class="break-line"></Label>
+
+            <TextView class="textarea"
+                hint="Space for description"
+                maxLength="250"
+                returnKeyType = "done"
+                [(ngModel)]="workout.description">
+            </TextView>
+    
+          </StackLayout>
+
+    </StackLayout>
+
+</ScrollView>

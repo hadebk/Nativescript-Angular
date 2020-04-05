@@ -1,0 +1,48 @@
+<ActionBar title=""> 
+
+    <NavigationButton 
+    text="Back"
+    (tap)="toLogin()">
+    </NavigationButton>
+
+    <ActionItem 
+        (tap)="toAddNewWorkout()"
+        ios.position="right"
+        android.position="action-bar">
+        <StackLayout class="add-icon">
+            <Label text="&#xf055;" class="fa"></Label>
+        </StackLayout>
+    </ActionItem>
+
+</ActionBar>
+
+<StackLayout class="main">
+
+    <Label text="Workouts" class="header"></Label>
+
+    <GridLayout>
+
+        <ScrollView>
+
+            <RadListView #listView height="100%" 
+            [items]="this.workouts" pullToRefresh="true" 
+            (pullToRefreshInitiated)="onPullToRefreshInitiated($event)">
+                <ng-template  let-item="item">
+                    <DockLayout stretchLastChild="false" [nsRouterLink]="['/workout', item.id]">
+    
+                        <StackLayout dock="left" class="text-box">
+                            <Label [text]="item.name" class="WorkoutName"></Label>
+                            <Label [text]="item.distanceMeters/1000+' km'" class="WorkoutKm"></Label>
+                        </StackLayout>
+    
+                        <Image dock="right" src="~/app/images/right-arrow.png" class="rightArrow"></Image>
+    
+                    </DockLayout>
+                </ng-template>
+            </RadListView >
+            
+        </ScrollView>
+
+    </GridLayout>
+
+</StackLayout>

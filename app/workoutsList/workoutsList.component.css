@@ -1,0 +1,51 @@
+ActionBar{
+    color: #FF2D55;
+}
+
+.add-icon{
+    padding: 0 10;
+}
+
+.main{
+    padding: 0 10;
+}
+
+DockLayout{
+    padding: 0 20;
+    border-bottom-width: 1;
+    border-color: #d6d6d6;
+}
+
+.header {
+    color: #000;
+    font-size: 32;
+    margin-top: 20;
+    margin-bottom: 30;
+    font-family: "Lato", "Lato-Bold";
+    font-weight: bold;
+}
+
+.rightArrow{
+    width: 20;
+    height: 20;
+}
+
+.text-box{
+    margin: 20 0;
+}
+
+.WorkoutName{
+    color:#000;
+    font-size: 18;
+    font-weight: bold;
+}
+
+.WorkoutKm{
+    color:#FF2D55;
+}
+
+.fa{
+    font-family: "FontAwesome", "fontawesome-web";
+    color: #000;
+    font-size: 25;
+}

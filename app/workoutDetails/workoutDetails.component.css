@@ -1,0 +1,87 @@
+DockLayout{
+    height: 40;
+    padding: 15 15 0;
+    z-index: 999;
+}
+
+.cover-img{
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+}
+
+.data{
+    padding: 0 15; 
+}
+
+.name{
+    color: #000;
+    font-size: 28;
+    padding: 20 0 30;
+    font-family: "Lato", "Lato-Bold";
+    font-weight: bold;
+}
+
+.time-box, .distance-box{
+    margin: 0 20;
+}
+
+.distance-box{
+    margin-top: 15;
+    margin-bottom: 20;
+}
+
+.icon-time, .distance-time{
+    width: 22;
+    height: 22;
+    margin-right: 15;
+}
+
+.time, .distance{
+    color: #000;
+    font-size: 18;
+}
+
+.sub-time, .sub-distance{
+    color: #999;
+    font-size: 12;
+    margin-top: 0;
+}
+
+.tags-box{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10 20;
+}
+
+.tag{
+    background-color: #F0F0F2;
+    color: #979696;
+    font-size: 14;
+    border-radius: 5;
+    margin: 5;
+    padding: 8 20;
+}
+
+.desc-box{
+    padding-top: 10;
+    margin-bottom: 30;
+}
+
+.desc-label{
+    font-size: 13;
+    color: #999;
+    margin-bottom: 3;
+}
+
+.desc{
+    color: #000;
+    font-size: 16;
+}
+
+.break-line{
+    background-color: #999;
+    height: 1;
+    margin-top: 5;
+    margin-bottom: 5;
+}

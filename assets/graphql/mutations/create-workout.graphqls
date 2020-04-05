@@ -1,0 +1,10 @@
+mutation createWorkout($name: String!, $description: String!, $tags: [TagInput], $userId: Int!) {
+    createWorkout(name: $name, description: $description, tags: $tags, userId: $userId) @namedClient(name: "BackendServiceGraphQLClient") {
+        id
+        name
+        description
+        tags {
+            name
+        }
+    }
+}

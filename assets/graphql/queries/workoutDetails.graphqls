@@ -1,0 +1,13 @@
+query workout($id: Int!) {
+    workout(id: $id) @namedClient(name: "BackendServiceGraphQLClient"){
+        id
+        name
+        description
+        at
+        tags {
+            name
+        }
+        distanceMeters
+        durationSeconds
+    }
+}
