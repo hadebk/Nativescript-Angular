@@ -15,7 +15,7 @@ What has been implemented in this project:
 
 ## 1- Login page
 
-![Login page screenshot](./app-screen/login.jpeg)
+![Login page screenshot](./app-screen/login.jpeg = 250x250)
 -------------------------------------------------
 ## 2- All workouts list page
 
