@@ -13,7 +13,7 @@ What has been implemented in this project:
 
 ## App screens:
 1- Login page
-![Login page screenshot](../app-screen/login.jpeg)
+![Login page screenshot](./app-screen/login.jpeg)
 
 
 
