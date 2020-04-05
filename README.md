@@ -11,21 +11,26 @@ What has been implemented in this project:
 - Delete a wrkout by execute graphql mutation.
 - Basic input validation.
 
-## App screens:
+## App screens
+
 1- Login page
+
 ![Login page screenshot](./app-screen/login.jpeg)
 -------------------------------------------------
 2- All workouts list page
+
 ![Login page screenshot](./app-screen/list.jpeg)
 -------------------------------------------------
 3- Deatails of a workout page
+
 ![Login page screenshot](./app-screen/details.jpeg)
 -------------------------------------------------
 4- Add new workout page
+
 ![Login page screenshot](./app-screen/addnew.jpeg)
 -------------------------------------------------
 
-### Note: the app will not run because the Graphql api is disable.
+### *Note: the app will not run because the Graphql api is disable.
 
 
 
