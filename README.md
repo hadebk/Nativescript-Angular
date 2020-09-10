@@ -30,7 +30,7 @@ What has been implemented in this project:
 ![Login page screenshot](./app-screen/addnew.jpeg)
 -------------------------------------------------
 
-### *Note: the app will not run because the Graphql api is disable.
+### *Note: the app will not run because the Graphql api was disabled.
 
 
 
